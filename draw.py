@@ -1,12 +1,19 @@
 import turtle
-
+from random import randint
 draw = turtle.Turtle()
 
 draw.speed(10)
 
-turtle.bgcolor("purple")
-draw.pencolor("white")
+turtle.bgcolor("black")
+
+
 for i in range(185):
+    r = randint(0, 255)
+    g = randint(0, 255)
+    b = randint(0, 255)
+
+    turtle.colormode(255)
+    draw.pencolor(r, g, b)
     draw.forward(90)
     draw.right(30)
     draw.forward(20)
@@ -19,5 +26,7 @@ for i in range(185):
     draw.pendown()
 
     draw.right(2)
+
+
 
 turtle.done()
