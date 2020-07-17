@@ -7,6 +7,7 @@ speed(0)
 bgcolor('black')
 
 x = 1
+print("this is a graphics")
 
 while x < 300:
 
